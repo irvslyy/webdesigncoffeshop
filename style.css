@@ -1,0 +1,210 @@
+
+/*Grid System*/
+/*=================================*/
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+	/*border: 1 px solid red;*/
+	/*background: #eee;*/
+}
+
+.rows::after{
+	content: '';
+	clear: both;
+	display: table;
+}
+
+@media screen and (max-width: 1000px) {
+	[class*="col-"]{
+		float: none;
+		width: 100%;
+	}
+}
+
+@font-face{
+  font-family: 'Montserrat-Bold';
+  src: url('font/montserrat/Montserrat-Bold.ttf');
+  src: url('font/montserrat/Montserrat-Bold.ttf') format('ttf'),
+       url('font/montserrat/Montserrat-Bold.ttf') format('truetype');
+} 
+@font-face{
+  font-family: 'jah';
+  src: url('font/jah/jah.ttf');
+  src: url('font/jah/jah.ttf') format('ttf'),
+       url('font/jah/jah.ttf') format('truetype');
+} 
+@font-face{
+  font-family: 'Monserrat-Medium';
+  src: url('font/montserrat/Montserrat-Medium.ttf');
+  src: url('font/montserrat/Montserrat-Medium.ttf') format('ttf'),
+       url('font/montserrat/Montserrat-Medium.ttf') format('truetype');
+} 
+html,body{
+	height: 100%;
+}
+.header{
+	height: 100%;
+	background-image: url(assets/betterins.png);
+}
+.navbar-expand-lg{
+	height: 100px;
+	color: #fff;
+	font-family: Montserrat-Bold;
+}
+.navbar-text{
+	margin-right: 70px;
+}
+.navbar-nav{
+	margin-left: 30px;
+}
+.heading-text{
+	color: #fff;
+	font-family: Montserrat-Bold;
+	font-size: 100px;
+	margin-top: 20px;
+	animation: slash 1s;
+}
+@-webkit-keyframes slash{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.desk-text{
+	color: #eaeaea;
+}
+.darker{
+	border-radius: 20px;
+}
+.darkers{
+	border-radius: 20px;
+	font-family: jah;
+	width: 120px;
+}
+.borders{
+	border: 10px solid #232323;
+}
+.barista1{
+	height: 450px;
+	background-image: url(assets/barista1.jpeg);
+	background-size: cover;
+	background-position: center;
+	filter: grayscale(100%);
+}
+.barista{
+	padding: 50px;
+}
+.barista2{
+	height: 450px;
+	background-image: url(assets/barista2.jpeg);
+	background-size: cover;
+	background-position: 0 -30px;
+	filter: grayscale(1);
+}
+.mta{
+	margin-top: 80px;
+}
+.heading-alex{
+	font-family: jah;
+	font-size: 80px;
+}
+.wo{
+  background-image: url(assets/gelap.png);
+  background-attachment: fixed;
+  background-position: 0 30px;
+}
+.footer{
+	color: #fff;
+}
+.foot{
+	background-color: #232323;
+}
+.wo h1{
+  text-align: center;
+  color: white;
+}
+.wo p{
+  text-align: center;
+  color: white;
+}
+.whowe{
+	font-family: jah;
+	font-size: 60px;
+}
+.kutip{
+	font-family: jah;
+	font-size: 30px;
+}
+.kutips{
+	font-family: jah;
+	font-size: 24px;
+	color: #fff;
+	margin-top: 50px;
+}
+.margs{
+	margin-top: 50px;
+}
+/*.rosko{
+	border-bottom: 5px solid #232323; 
+}*/
+.navbars{
+	height: 70px;
+	background-color: #4F3F42;
+	font-family: jah;
+}
+.navbar-brand{
+	font-size: 30px;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+.logos{
+	margin-top: 50px;
+}
+.apek{
+	margin-top: 10px;
+}
+.menus{
+	background-color: #232323;
+}
+.text-headline{
+	height: 350px;
+	background-image: url(assets/design2.png);
+}
+.menu{
+}
+.shadow{
+	box-shadow: 0px 2px 64px 2px rgba(120,120,120,0.2) !important
+}
+.card{
+	color: #232323;
+}
+.menu-harga{
+	font-family: jah;
+	font-size: 30px;
+	color: #232323;
+}
+.doted{
+	border-bottom: 2px dotted #232323;
+}
+.batus{
+	overflow-x: hidden;
+}
+.bor{
+	border-top: 2px solid #eaeaea;
+}
